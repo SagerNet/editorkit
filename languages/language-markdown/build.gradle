@@ -22,7 +22,6 @@ plugins {
 ext.libraryGroupId = "com.blacksquircle.ui"
 ext.libraryArtifactId = "language-markdown"
 
-apply from: rootProject.file("gradle/publish.gradle")
 
 android {
     compileSdkVersion versions.compileSdk
