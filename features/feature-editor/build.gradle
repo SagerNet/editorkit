@@ -18,7 +18,6 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'kotlin-kapt'
-    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -73,10 +72,6 @@ dependencies {
     // Coroutines
     implementation library.coroutines_core
     implementation library.coroutines_android
-
-    // DI
-    implementation library.hilt
-    kapt library.hilt_compiler
 
     // Other
     implementation library.keyboardevent

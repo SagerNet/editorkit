@@ -16,43 +16,43 @@
 
 package com.blacksquircle.ui.data.factory
 
-import com.blacksquircle.ui.language.actionscript.ActionScriptLanguage
+//import com.blacksquircle.ui.language.actionscript.ActionScriptLanguage
 import com.blacksquircle.ui.language.base.Language
-import com.blacksquircle.ui.language.c.CLanguage
+/*import com.blacksquircle.ui.language.c.CLanguage
 import com.blacksquircle.ui.language.cpp.CppLanguage
 import com.blacksquircle.ui.language.csharp.CSharpLanguage
 import com.blacksquircle.ui.language.groovy.GroovyLanguage
 import com.blacksquircle.ui.language.html.HtmlLanguage
 import com.blacksquircle.ui.language.java.JavaLanguage
-import com.blacksquircle.ui.language.javascript.JavaScriptLanguage
+import com.blacksquircle.ui.language.javascript.JavaScriptLanguage*/
 import com.blacksquircle.ui.language.json.JsonLanguage
-import com.blacksquircle.ui.language.kotlin.KotlinLanguage
+/*import com.blacksquircle.ui.language.kotlin.KotlinLanguage
 import com.blacksquircle.ui.language.lisp.LispLanguage
 import com.blacksquircle.ui.language.lua.LuaLanguage
 import com.blacksquircle.ui.language.markdown.MarkdownLanguage
-import com.blacksquircle.ui.language.php.PhpLanguage
+import com.blacksquircle.ui.language.php.PhpLanguage*/
 import com.blacksquircle.ui.language.plaintext.PlainTextLanguage
-import com.blacksquircle.ui.language.python.PythonLanguage
+/*import com.blacksquircle.ui.language.python.PythonLanguage
 import com.blacksquircle.ui.language.shell.ShellLanguage
 import com.blacksquircle.ui.language.sql.SqlLanguage
 import com.blacksquircle.ui.language.typescript.TypeScriptLanguage
 import com.blacksquircle.ui.language.visualbasic.VisualBasicLanguage
-import com.blacksquircle.ui.language.xml.XmlLanguage
+import com.blacksquircle.ui.language.xml.XmlLanguage*/
 
 object LanguageFactory {
 
     fun create(fileName: String): Language {
         return when {
-            ActionScriptLanguage.supportFormat(fileName) -> ActionScriptLanguage()
+           /* ActionScriptLanguage.supportFormat(fileName) -> ActionScriptLanguage()
             CLanguage.supportFormat(fileName) -> CLanguage()
             CppLanguage.supportFormat(fileName) -> CppLanguage()
             CSharpLanguage.supportFormat(fileName) -> CSharpLanguage()
             GroovyLanguage.supportFormat(fileName) -> GroovyLanguage()
             HtmlLanguage.supportFormat(fileName) -> HtmlLanguage()
             JavaLanguage.supportFormat(fileName) -> JavaLanguage()
-            JavaScriptLanguage.supportFormat(fileName) -> JavaScriptLanguage()
+            JavaScriptLanguage.supportFormat(fileName) -> JavaScriptLanguage()*/
             JsonLanguage.supportFormat(fileName) -> JsonLanguage()
-            KotlinLanguage.supportFormat(fileName) -> KotlinLanguage()
+            /*KotlinLanguage.supportFormat(fileName) -> KotlinLanguage()
             LispLanguage.supportFormat(fileName) -> LispLanguage()
             LuaLanguage.supportFormat(fileName) -> LuaLanguage()
             MarkdownLanguage.supportFormat(fileName) -> MarkdownLanguage()
@@ -62,7 +62,7 @@ object LanguageFactory {
             SqlLanguage.supportFormat(fileName) -> SqlLanguage()
             TypeScriptLanguage.supportFormat(fileName) -> TypeScriptLanguage()
             VisualBasicLanguage.supportFormat(fileName) -> VisualBasicLanguage()
-            XmlLanguage.supportFormat(fileName) -> XmlLanguage()
+            XmlLanguage.supportFormat(fileName) -> XmlLanguage()*/
             else -> PlainTextLanguage()
         }
     }
