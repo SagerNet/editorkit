@@ -40,7 +40,7 @@ ext {
     playcore_version = '1.8.1'
 
     // UI
-    appcompat_version = '1.3.0-rc01'
+    appcompat_version = '1.3.0'
     materialdesign_version = '1.3.0'
     constraintlayout_version = '2.0.4'
     swiperefreshlayout_version = '1.2.0-alpha01'
